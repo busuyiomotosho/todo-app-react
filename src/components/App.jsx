@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InputArea from "./InputArea";
 import ToDoItem from "./ToDoItem";
+import Footer from "./Footer";
 
 function App() {
   const [addedToDo, setAddedTodo] = useState([]);
@@ -20,6 +21,7 @@ function App() {
   };
 
   return (
+    <div>
     <div className="container">
       <div className="heading">
         <h1>To-Do List</h1>
@@ -35,7 +37,10 @@ function App() {
             />
           ))}
       </div>
-    </div>
+      
+      </div>
+      <Footer/>
+      </div>
   );
 }
 

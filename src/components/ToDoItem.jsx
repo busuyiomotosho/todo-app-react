@@ -29,7 +29,7 @@ const ToDoItem = (props) => {
       <input type="checkbox" name="checkbox" value={done} onChange= {handleButtonClick}/>
       <p style={{ textDecoration: isDone && "line-through" }}>{props.text}</p>
       {/* <button onClick={handleButtonClick}>{done}</button> */}
-        <FontAwesomeIcon icon={faTrash} style={{color: "#e73718",}} onClick={() => {
+        <FontAwesomeIcon icon={faTrash} style={{color: "#7E1717",}} onClick={() => {
             props.onChecked(props.id);
           }} />
     </div>
