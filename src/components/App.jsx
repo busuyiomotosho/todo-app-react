@@ -26,7 +26,6 @@ function App() {
       </div>
       <InputArea addItem={addToDo} />
       <div>
-        <ul>
           {addedToDo.map((toDoItem, index) => (
             <ToDoItem
               key={index}
@@ -35,7 +34,6 @@ function App() {
               onChecked={deleteToDo}
             />
           ))}
-        </ul>
       </div>
     </div>
   );

@@ -4,11 +4,12 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const ToDoItem = (props) => {
   const [isDone, setIsDone] = useState(false);
-  const [done, setDone] = useState("Completed");
+  const [done, setDone] = useState(false);
 
   const buttonChange = () => {
     setDone((prev) => {
-      return prev === "Completed" ? "Not Completed" : "Completed";
+      // return prev === "Completed" ? "Not Completed" : "Completed";
+      return !prev;
     });
   };
 
@@ -24,13 +25,13 @@ const ToDoItem = (props) => {
   };
 
   return (
-    <div>
-      <li style={{ textDecoration: isDone && "line-through" }}>
-        {props.text} <button onClick={handleButtonClick}>{done}</button>{" "}
+    <div className="item">
+      <input type="checkbox" name="checkbox" value={done} onChange= {handleButtonClick}/>
+      <p style={{ textDecoration: isDone && "line-through" }}>{props.text}</p>
+      {/* <button onClick={handleButtonClick}>{done}</button> */}
         <FontAwesomeIcon icon={faTrash} style={{color: "#e73718",}} onClick={() => {
             props.onChecked(props.id);
           }} />
-      </li>
     </div>
   );
 };
