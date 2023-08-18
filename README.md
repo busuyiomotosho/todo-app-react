@@ -1,15 +1,23 @@
 # Simple Todo List App
-This is a simple Todo List web application. 
+
+This is a simple Todo List web application.
 It is a simple application that lets the user add tasks to their todo list, delete tasks from it, and check off completed task,. It is built with React.js.
 
+<img src="https://github.com/busuyiomotosho/todo-app-react/blob/main/screenshots/React%20Todo%20List%202.png" width="100%">
+
+<img src="https://github.com/busuyiomotosho/todo-app-react/blob/main/screenshots/React%20Todo%20List.png" width="100%">
+
 ## Tech Stack:
- ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
- ![ReactJS](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
- 
- ## Run Locally
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![ReactJS](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+
+## Run Locally
 
 ### Prerequisite
+
 Make sure you have these installed on your computer.
+
 - Node.js
 - ReactJS
 
