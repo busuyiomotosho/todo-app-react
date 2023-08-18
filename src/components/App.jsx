@@ -21,13 +21,13 @@ function App() {
   };
 
   return (
-    <div>
-    <div className="container">
-      <div className="heading">
-        <h1>To-Do List</h1>
-      </div>
-      <InputArea addItem={addToDo} />
-      <div>
+    <div className="main">
+      <div className="container">
+        <div className="heading">
+          <h1>To-Do List</h1>
+        </div>
+        <InputArea addItem={addToDo} />
+        <div>
           {addedToDo.map((toDoItem, index) => (
             <ToDoItem
               key={index}
@@ -36,11 +36,10 @@ function App() {
               onChecked={deleteToDo}
             />
           ))}
+        </div>
       </div>
-      
-      </div>
-      <Footer/>
-      </div>
+      <Footer />
+    </div>
   );
 }
 
