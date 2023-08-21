@@ -1,9 +1,10 @@
 body {
   background-color: #ecf8f9;
-  height: 100vh;
-  padding: 1rem;
+  min-height: 100vh;
+  gap: 3rem;
   box-sizing: border-box;
   display: flex;
+  flex-flow: column nowrap;
   color: hsl(198, 1%, 29%);
   font-family: "Architects Daughter", cursive;
   text-align: center;
@@ -44,10 +45,9 @@ li {
 }
 
 .main {
-  display: flex;
-  height: 70vh;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
+  /* width: min(90%, 50rem); */
+  gap: 1.25rem;
 }
 .container {
   height: auto;
